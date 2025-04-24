@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osaamisen arviointi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #DDD0C8;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        section {
+            width: 100%;
+            max-width: 900px;
+            text-align: center;
+        }
+
+        .text {
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .arvosana {
+            background-color: #c2b8ae;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 18px;
+            text-align: left;
+        }
+
+        .button {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+
+        .knipka {
+            width: 160px;
+            height: 50px;
+            background-color: #DDD0C8;
+            border: none;
+            color: black;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .knipka a {
+            text-decoration: none;
+            color: inherit;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .knipka:hover {
+            background-color: #bbb2a8;
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .text {
+                font-size: 26px;
+            }
+
+            .arvosana {
+                font-size: 16px;
+                padding: 16px;
+            }
+
+            .knipka {
+                width: 130px;
+                height: 45px;
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .text {
+                font-size: 22px;
+            }
+
+            .arvosana {
+                font-size: 15px;
+                padding: 14px;
+            }
+
+            .knipka {
+                width: 100%;
+                max-width: 300px;
+                font-size: 14px;
+                height: 40px;
+            }
+
+            .button {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="button">
+            <button class="knipka"><a href="etusivu.html">Etusivu</a></button>
+            <button class="knipka"><a href="kriteerit.html">Kriteerit</a></button>
+            <button class="knipka"><a href="tutkinnon_muodostuminen.html">Tutkinnon rakenne</a></button>
+            <button class="knipka"><a href="tutkinnonosat.html">Tutkinnonosat</a></button>
+
+        </div>
+        <p class="h2">Osaamisen arviointi</p>
+
+        <div class="arvosana">
+            <p>
+                Ammatilliset tutkinnon osat arvioidaan asteikolla 1–5 tutkinnon osan ammattitaitovaatimusten ja arviointikriteerien mukaisesti. 
+                Opiskelijan osaaminen arvioidaan tutkinnon osittain. 
+                Tutkinnon osan arvosana määräytyy sen mukaan, mille arviointiasteikon tasolle opiskelijan osaaminen kokonaisuutena parhaiten sijoittuu.
+            </p>
+        </div>
+
+        <div class="arvosana">
+            <p>
+                Yhteisten tutkinnon osien osa-alueet ja yritystoiminnan suunnittelu, työpaikkaohjaajaksi valmentautuminen, 
+                yrityksessä toimiminen ja huippuosaajana toimiminen tutkinnon osat arvioidaan asteikolla 1–5 tutkinnon osan 
+                ammattitaitovaatimusten, osaamistavoitteiden ja arviointikriteerien mukaisesti. 
+                Arvosanat 2 ja 4 määräytyvät seuraavasti:
+            </p>
+        </div>
+
+        <div class="arvosana">
+            <p>
+                <strong>2</strong> = Opiskelijan osaamisen taso ylittää selkeästi 1-tason, mutta ei yllä 3-tasolle.<br><br>
+                <strong>4</strong> = Opiskelijan osaamisen taso ylittää selkeästi 3-tason, mutta ei yllä 5-tasolle.
+            </p>
+        </div>
+
+
+    </section>
+</body>
+</html>

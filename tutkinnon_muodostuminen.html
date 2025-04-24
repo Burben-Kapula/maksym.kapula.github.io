@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutkinnon muodostuminen</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #DDD0C8;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        section {
+            width: 100%;
+            max-width: 900px;
+            text-align: center;
+        }
+
+        .otsikko {
+            background-color: #c2b8ae;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+            font-size: 28px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .ensin_text,
+        .tutkintonimikkeet {
+            background-color: #c2b8ae;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            color: #333;
+            font-size: 18px;
+            text-align: left;
+        }
+
+        .tutkintonimikkeet {
+            list-style-position: inside;
+        }
+
+        .button {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        .knipka {
+            width: 160px;
+            height: 50px;
+            background-color: #DDD0C8;
+            border: none;
+            color: black;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .knipka a {
+            text-decoration: none;
+            color: inherit;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .knipka:hover {
+            background-color: #bbb2a8;
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .otsikko {
+                font-size: 24px;
+            }
+
+            .ensin_text,
+            .tutkintonimikkeet {
+                font-size: 16px;
+                padding: 16px;
+            }
+
+            .knipka {
+                width: 140px;
+                height: 45px;
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .otsikko {
+                font-size: 20px;
+                padding: 16px;
+            }
+
+            .ensin_text,
+            .tutkintonimikkeet {
+                font-size: 15px;
+                padding: 14px;
+                text-align: left;
+            }
+
+            .knipka {
+                width: 100%;
+                max-width: 300px;
+                height: 40px;
+                font-size: 14px;
+            }
+
+            .button {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="main">
+        <div class="button">
+            <button class="knipka"><a href="etusivu.html">Etusivu</a></button>
+            <button class="knipka"><a href="kriteerit.html">Kriteerit</a></button>
+            <button class="knipka"><a href="osaamisen_arviointi.html">Osaamisen arviointi</a></button>
+            <button class="knipka"><a href="tutkinnonosat.html">Tutkinnonosat</a></button>
+    
+        </div>
+        <div class="otsikko">
+            <p class="h2">
+                Tutkinnon muodostuminen
+            </p>
+        </div>
+
+        <div class="ensin_text">
+            <p>
+                Tieto- ja viestintätekniikan perustutkinnon laajuus on 180 osaamispistettä. 
+                Tutkinto muodostuu ammatillisista tutkinnon osista (145 osaamispistettä) 
+                ja yhteisistä tutkinnon osista (35 osaamispistettä).<br><br>
+                Ammatillisista tutkinnon osista pakollisia on 70–115 osaamispistettä ja valinnaisia 30–75 osaamispistettä. 
+                Tieto- ja viestintätekniikan perustutkinto sisältää seuraavat tutkintonimikkeet:
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <ul class="tutkintonimikkeet">
+            <li>elektroniikka-asentaja</li>
+            <li>hyvinvointiteknologia-asentaja</li>
+            <li>tietoverkkoasentaja</li>
+            <li>IT-tukihenkilö</li>
+            <li>ohjelmistokehittäjä</li>
+        </ul>
+    </section>
+
+
+</body>
+</html>
